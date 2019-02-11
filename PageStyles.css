@@ -1,0 +1,19 @@
+/**
+* This is the CSS file that will contain all of the styles, themes, and all the same.
+* @author: Brandon Phillips
+* @author: Jordan Brown
+* @version: Feb 10, 2019
+*
+**/
+
+/*
+    This is to make the main header for any of the webpages.
+
+*/
+.mainHeader {text-align: center;
+            color: red;}
+
+/*
+    This is to have the text in the center of the webpage.
+*/
+.centerText {text-align: center;}
