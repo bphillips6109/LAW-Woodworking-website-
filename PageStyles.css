@@ -17,3 +17,37 @@
     This is to have the text in the center of the webpage.
 */
 .centerText {text-align: center;}
+
+/*
+    This is the styling for the main div of the page
+*/
+.redDiv{
+    background-color: blush;
+    column-count: 2;
+
+}
+
+/*
+    This is the CSS for the ______ button.
+*/
+.submitButton{
+    background-color: black;
+    color: white;
+    transition: 0.3s
+}
+.submitButton:hover{
+    background-color: gray;
+    color: black;
+
+}
+
+/*
+    This is the div set up for all of the information that will be on the pages.
+*/
+.contentFrame{
+    float: center;
+    background-color: blue;
+    border-radius: 4px;
+    width: 33%;
+    font-family: "Courier New", monospace;
+}
