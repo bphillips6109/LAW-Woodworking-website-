@@ -1,11 +1,16 @@
 body{
-	font-family: 'Nanum Pen Script', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	background: rgb(178, 127, 76);
 	color: white;
-	font-size: 20px;
+	font-size: 16px;
+	background-image: url(https://images.pexels.com/photos/164005/pexels-photo-164005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	background-size: cover;
+	background-position: center;
 }
 
 header{
+	font-family: 'Nanum Pen Script', sans-serif;
+	font-size: 40px;
 	background-image: url(http://craftsmanave.com/v2/wp-content/uploads/2018/06/RHandt_18_0524_WoodWorking_082.jpg);
 	background-size: cover;
 	background-position: center;
@@ -33,7 +38,9 @@ p{
 .navbar{
 	position: fixed;
 	width: 100%;
+	color: white;
 }
+
 
 footer{
 	border-top: 2px solid white;
