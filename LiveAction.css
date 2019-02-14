@@ -5,33 +5,14 @@
 * @version: Feb 10, 2019
 *
 **/
-
 body{
 	font-family: 'Roboto', sans-serif;
-	background: rgb(178, 127, 76);
+	background: rgb(202, 179, 136);
 	color: white;
 	font-size: 16px;
 	background-image: url(https://images.pexels.com/photos/164005/pexels-photo-164005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 	background-size: cover;
 	background-position: center;
-}
-
-header{
-	font-family: 'Nanum Pen Script', sans-serif;
-	font-size: 40px;
-	background-image: url(http://craftsmanave.com/v2/wp-content/uploads/2018/06/RHandt_18_0524_WoodWorking_082.jpg);
-	background-size: cover;
-	background-position: center;
-	height: 100vh;
-	margin-bottom: 50px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	text-transform: uppercase;
-	letter-spacing: 6px;
-	text-shadow: 0px 4px 3px black;
 }
 
 html{
@@ -43,20 +24,56 @@ p{
 	margin: 0 auto 20px;
 }
 
-.navbar{
-	position: fixed;
-	width: 100%;
-	color: white;
-}
-
-
 footer{
 	border-top: 2px solid white;
 	background: rgba(4, 0, 0);
 	height: 40px;
 	padding-top: 5px;
-	display: block;
+	width: 100%;
+	border-color: rgb(202, 179, 136);
+	border-width: 2px;
 }
+
+.landingPage {
+	font-family: 'Staatliches', sans-serif;
+	background-image: url(http://craftsmanave.com/v2/wp-content/uploads/2018/06/RHandt_18_0524_WoodWorking_082.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	text-shadow: 0px 4px 3px black;
+}
+
+.landingDiv{
+	font-family: 'Staatliches', sans-serif;
+	font-size: 70px;
+	text-shadow: 0px 4px 3px black;
+	text-align: center;
+	letter-spacing: 6px;
+}
+
+.item{
+	height: 300px;
+	width: 30%;
+	float: left;
+	margin: 1.66%;
+}
+
+.navbar{
+	position: fixed;
+	width: 100%;
+	color: white;
+	border-color: rgb(202, 179, 136);
+    border-bottom-width: 1px;
+}
+
 
 .Copyright{
 	float:left;
@@ -64,83 +81,5 @@ footer{
 
 .Social{
 	float: right;
-	padding-right: 40px;
-}
-
-
-/*
-    This is to make the main header for any of the webpages.
-
-*/
-.mainHeader {text-align: center;
-            color: red;}
-
-/*
-    This is to have the text in the center of the webpage.
-*/
-.centerText {text-align: center;}
-
-/*
-    This is the styling for the main div of the page
-*/
-.redDiv{
-    background-color: blush;
-    column-count: 2;
-
-}
-
-/*
-    This is the CSS for the ______ button.
-*/
-.submitButton{
-    background-color: black;
-    color: white;
-    transition: 0.3s
-}
-.submitButton:hover{
-    background-color: gray;
-    color: black;
-
-}
-
-/*
-    This is the div set up for all of the information that will be on the pages.
-*/
-.contentFrame{
-    float: center;
-    background-color: blue;
-    border-radius: 4px;
-    width: 33%;
-    font-family: "Courier New", monospace;
-}
-
-/*
-    This is going to be the navigation bar that allows the user to pick and choose where they want to go.
-*/
-.navBarBack{
-    background-color: #AEA1A1;
-    color: white;
-    width: 100%;
-    height: 50px;
-    border-radius: 5px;
-}
-
-.navBarContents{
-    display: block;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    background-color: #AEA1A1;
-}
-
-/*
-    This is the styling for the logo div.
-*/
-.logoStyle{
-    background-color: white;
-    text-align: center;
-    width: 100%;
-    height: 100px;
-    border-color: #AEA1A1;
-
+	padding-right: 16px;
 }
