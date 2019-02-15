@@ -53,6 +53,20 @@ footer{
     border-bottom-width: 2px
 }
 
+.navbar-inverse .navbar-nav>li>a{
+	color: white;
+	font-size: 14px;
+	font-family: 'Staatliches', sans-serif;
+	letter-spacing: 3px;
+	padding-left: 10px;
+}
+
+
+
+.navbar-inverse .navbar-brand{
+	color:white;
+}
+
 .topHead{
 	text-align: center;
 	font-weight: bold;
@@ -78,7 +92,7 @@ footer{
 	font-size: 80px;
 	color: black;
 	font-family: 'Staatliches', sans-serif;
-	text-shadow: 0px 3px 4px rgb(202, 179, 136);
+	text-shadow: 0 3 4 rgb(202, 179, 136);
 	letter-spacing: 3px;
 	display: block;
 	text-align: center;

@@ -33,6 +33,22 @@ footer{
 	border-color: rgb(202, 179, 136);
 	border-width: 2px;
 }
+.navbar-inverse{
+	position: fixed;
+	top:0;
+	width: 100%;
+	border-color: rgb(202, 179, 136);
+	border-bottom-width: 2px
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	color: white;
+	font-size: 14px;
+}
+
+.navbar-inverse .navbar-brand{
+	color:rgb(230, 230, 230);
+}
 
 .landingPage {
 	font-family: 'Staatliches', sans-serif;
@@ -44,6 +60,7 @@ footer{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	overflow: auto;
 	align-items: center;
 	color: white;
 	text-transform: uppercase;
@@ -59,21 +76,13 @@ footer{
 	letter-spacing: 6px;
 }
 
-.item{
-	height: 300px;
-	width: 30%;
-	float: left;
-	margin: 1.66%;
-}
-
-.navbar{
-	position: fixed;
+.thumbnail{
 	width: 100%;
-	color: white;
-	border-color: rgb(202, 179, 136);
-    border-bottom-width: 1px;
 }
 
+.container{
+	width:94%
+}
 
 .Copyright{
 	float:left;
