@@ -35,6 +35,7 @@ footer{
 }
 
 .navbar-inverse{
+	z-index: 99999;
 	position: fixed;
 	top:0;
 	width: 100%;
@@ -58,21 +59,27 @@ footer{
 
 .landingPage {
 	font-family: 'Staatliches', sans-serif;
-	background-image: url(http://craftsmanave.com/v2/wp-content/uploads/2018/06/RHandt_18_0524_WoodWorking_082.jpg);
-	background-size: cover;
+	background-image: url(http://tinyurl.com/y6spulns);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 	background-position: center;
-	height: 100vh;
+	height: 100vmin;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	overflow: auto;
 	align-items: center;
 	color: white;
 	text-transform: uppercase;
-	letter-spacing: 10px;
+	letter-spacing: 20px;
 	text-shadow: 0px 4px 3px black;
 	margin: 0 auto;
 	text-align: center;
+}
+
+
+fas fa-angle-down{
+	position: center;
+	width: 100%;
 }
 
 .landingDiv{
@@ -98,4 +105,101 @@ footer{
 .Social{
 	float: right;
 	padding-right: 16px;
+}
+
+html, body {
+    background: #444;
+    height: 100%;
+    position: relative;
+}
+
+section {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+section + section {
+    background: #333;
+}
+
+.d.visible {
+    bottom: 20px;
+}
+
+.d {
+    border: 1px solid #eee;
+    border-radius: 50%;
+    color: #eee;
+    text-align: center;
+
+    bottom: -120px;
+    display: block;
+    left: 50%;
+    margin-left: -50px;
+    position: absolute;
+
+    height: 100px;
+    line-height: 100px;
+    width: 100px;
+
+    -webkit-animation: a 4s infinite;
+    -moz-animation: a 4s infinite;
+    -o-animation: a 4s infinite;
+    animation: a 4s infinite;
+
+    -webkit-transition: bottom 1s ease;
+    -moz-transition: bottom 1s ease;
+    -o-transition: bottom 1s ease;
+    transition: bottom 1s ease;
+}
+
+.a {
+    border-right: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    border-radius: 2px;
+    color: #eee;
+    display: inline-block;
+    font-size: 0;
+    height: 50px;
+    line-height: 0;
+    margin-top: -25px;
+    text-align: center;
+    vertical-align: middle;
+    width: 50px;
+
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(45deg);
+}
+
+@-webkit-keyframes a {
+    0%   { opacity: .3; }
+    50%   { opacity: 1; }
+    100% { opacity: .3; }
+}
+
+@-moz-keyframes a {
+    0%   { opacity: .3; }
+    50%   { opacity: 1; }
+    100% { opacity: .3; }
+}
+
+@-o-keyframes a {
+    0%   { opacity: .3; }
+    50%   { opacity: 1; }
+    100% { opacity: .3; }
+}
+
+@keyframes a {
+    /*0%   { opacity: .3; }
+    50%   { opacity: 1; }
+    100% { opacity: .3; }*/
+
+    0%   { border-color: #eee; }
+    50%   { border-color: #555: }
+    100% { border-color: #eee; }
+
 }
