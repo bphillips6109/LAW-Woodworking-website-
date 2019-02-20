@@ -7,10 +7,9 @@
 **/
 body{
 	font-family: 'Roboto', sans-serif;
-	background: rgb(202, 179, 136);
+	background: rgb(28, 28, 28);
 	color: white;
 	font-size: 16px;
-	background-image: url(https://images.pexels.com/photos/164005/pexels-photo-164005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 	background-size: cover;
 	background-position: center;
 }
@@ -19,19 +18,17 @@ html{
 	height: 100%;
 }
 
+hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0;
+	border-top: 1px solid rgb(202, 179, 136);
+	width: 95%;
+}
+
 p{
 	max-width: 600px;
 	margin: 0 auto 20px;
-}
-
-footer{
-	border-top: 2px solid white;
-	background: rgba(4, 0, 0);
-	height: 40px;
-	padding-top: 5px;
-	width: 100%;
-	border-color: rgb(202, 179, 136);
-	border-width: 2px;
 }
 
 .navbar-inverse{
@@ -41,6 +38,7 @@ footer{
 	width: 100%;
 	border-color: rgb(202, 179, 136);
 	border-bottom-width: 2px;
+	background-color: black;
 }
 
 .navbar-inverse .navbar-nav>li>a{
@@ -59,7 +57,11 @@ footer{
 
 .landingPage {
 	font-family: 'Staatliches', sans-serif;
-	background-image: url(http://tinyurl.com/y6spulns);
+	text-transform: uppercase;
+	letter-spacing: 14px;
+	text-shadow: 0 4px 3px black;
+	background-image: url(https://i.imgur.com/wuoDQ0A.jpg);
+	color: white;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -67,19 +69,16 @@ footer{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	color: white;
-	text-transform: uppercase;
-	letter-spacing: 20px;
-	text-shadow: 0px 4px 3px black;
-	margin: 0 auto;
 	text-align: center;
 }
 
+.h1, h1 {
+	font-size:2em;
+}
 
 .landingDiv{
 	font-family: 'Staatliches', sans-serif;
-	font-size: 70px;
+	font-size: 7vw;
 	text-shadow: 0px 4px 3px black;
 	text-align: center;
 	letter-spacing: 6px;
@@ -87,10 +86,22 @@ footer{
 
 .thumbnail{
 	width: 100%;
+	margin-top: 10px;
 }
 
 .container{
 	width:94%
+}
+
+.page-footer{
+	border-top: 2px solid;
+	background-color: black;
+	height: 40px;
+	padding-top: 5px;
+	width: 100%;
+	border-color: rgb(202, 179, 136);
+	color: white;
+	/* font-size: 2vw; */
 }
 
 .Copyright{
