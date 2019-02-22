@@ -5,7 +5,7 @@
 * @version: Feb 10, 2019
 *
 **/
-body{
+body {
 	font-family: 'Roboto', sans-serif;
 	background: rgb(28, 28, 28);
 	color: white;
@@ -14,11 +14,13 @@ body{
 	background-position: center;
 }
 
-html{
+html {
 	height: 100%;
+
 }
 
 hr {
+	box-sizing: border-box;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	border: 0;
@@ -26,22 +28,29 @@ hr {
 	width: 95%;
 }
 
-p{
+p {
 	max-width: 600px;
 	margin: 0 auto 20px;
 }
 
-.navbar-inverse{
+.navbar-inverse {
 	z-index: 99999;
 	position: fixed;
 	top:0;
 	width: 100%;
-	border-color: rgb(202, 179, 136);
-	border-bottom-width: 2px;
+	border-bottom: 2px solid rgb(202, 179, 136);
 	background-color: black;
 }
 
-.navbar-inverse .navbar-nav>li>a{
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+	border-color: rgb(202, 179, 136)
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: gray;
+}
+
+.navbar-inverse .navbar-nav>li>a {
 	color: white;
 	font-size: 14px;
     text-transform: uppercase;
@@ -49,10 +58,14 @@ p{
     text-shadow: 0px 1px 2px rgb(10, 10, 10);
 }
 
-.navbar-inverse .navbar-brand{
+.navbar-inverse .navbar-brand {
     font-family: 'Roboto', sans-serif;
-	color:rgb(230, 230, 230);
+	color:white;
     font-size: 20px;
+}
+
+.navbar-inverse .navbar-brand:hover {
+	color: gray;
 }
 
 .landingPage {
@@ -76,7 +89,7 @@ p{
 	font-size:2em;
 }
 
-.landingDiv{
+.landingDiv {
 	font-family: 'Staatliches', sans-serif;
 	font-size: 7vw;
 	text-shadow: 0px 4px 3px black;
@@ -84,33 +97,26 @@ p{
 	letter-spacing: 6px;
 }
 
-.thumbnail{
+.thumbnail {
 	width: 100%;
 	margin-top: 10px;
 }
 
-.container{
-	width:94%
-}
-
-.page-footer{
-	border-top: 2px solid;
-	background-color: black;
-	height: 40px;
-	padding-top: 5px;
+.flex-container {
+	display: flex;
+	flex-direction: row;
 	width: 100%;
-	border-color: rgb(202, 179, 136);
+	height: 50px;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: black;
 	color: white;
-	/* font-size: 2vw; */
+	border-top: 2px solid rgb(202, 179, 136);
+	padding-left: 14px;
+	padding-right: 14px;
 }
 
-.Copyright{
-	float:left;
-}
-
-.Social{
-	float: right;
-	padding-right: 16px;
-}
-
-
+@media screen and (max-width: 600px) {
+	.flex-container {
+		font-size: 10px;
+	}
