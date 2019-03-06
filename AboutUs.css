@@ -62,7 +62,6 @@ hr {
 
 .navbar-inverse .navbar-brand:hover {
     color: gray;
-
 }
 
 .topHead {
@@ -172,10 +171,18 @@ hr {
 	}
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
+	.bioName {
+		text-align: center;
+	}
+
+	.bioContainer{
+		margin: 0 100px;
+	}
+
 	.flex-container {
 		width: 114%;
 		position: relative;
-		right:70px;
+		right: 70px;
 	}
 }

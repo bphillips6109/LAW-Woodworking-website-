@@ -20,7 +20,7 @@ html {
 	box-sizing: border-box;
 }
 
-h1{
+h1 {
 	font-size: 54px;
 	padding-top: 70px;
 	margin-bottom: 10px;
@@ -33,11 +33,17 @@ hr {
 	width: 95%;
 }
 
-.scrollButton > a:hover{
-	color: rgb(240, 240, 240);
+/* Add in smooth hover effect in JS */
+.scrollButton > a {
+	transition: color 0.5s ease;
+	color: rgb(10, 110, 110);
 }
 
-.description{
+.scrollButton > a:hover {
+	color: rgb(40, 40, 40);
+}
+
+.description {
 	margin: 40px;
 }
 
@@ -124,28 +130,33 @@ hr {
 }
 
 @media screen and (max-width: 1280px) {
-
 	a.scroll {
 		color: white;
 		position: relative;
 		top: 4em;
 		font-size: 50px;
 	}
+
+	h1.landingDiv{
+		font-size: 70px;
+		letter-spacing: 12px;
+	}
 }
 
 
-/*Adjust things for landscape mode*/
+/*Adjust landscape mode-- figure something
+out for down arrow in landscape. When applied to landscape,
+it affects all sizes.*/
 
-@media screen and (max-width: 1280px){
-
-	.landingDiv{
+@media screen and (max-width: 1280px) {
+	.landingDiv {
 		margin: -45px 4px 0 4px;
 		font-size: 60px;
 	}
 }
 
-@media screen and (max-width: 991px){
-	h1{
+@media screen and (max-width: 991px) {
+	h1 {
 		font-size: 40px;
 	}
 
@@ -156,8 +167,8 @@ hr {
 }
 
 
-@media screen and (max-width: 860px){
-	h1{
+@media screen and (max-width: 860px) {
+	h1 {
 		font-size: 35px;
 	}
 
@@ -168,12 +179,11 @@ hr {
 }
 
 @media screen and (max-width: 697px) {
-
 	.flex-container {
 		font-size: 10px;
 		text-align: center;
 	}
-	.description{
+	.description {
 		margin: 20px;
 	}
 
@@ -186,36 +196,30 @@ hr {
 		font-size: 50px;
 	}
 
-	h1{
+	h1 {
 		font-size: 30px;
 	}
-
 }
 
 @media screen and (max-width: 480px) {
-
 	hr {
 		width: 90%;
 	}
 
-	.landingDiv{
+	.landingDiv {
 		font-size: 40px;
 	}
-
 }
 
 @media screen and (orientation: landscape) {
-
 	h1 {
 		padding-top: 80px
 	}
 }
 
 @media screen and (orientation: portrait) {
-
 	h1 {
 		padding-top: 80px;
 		font-size: 32px;
 	}
-
 }
