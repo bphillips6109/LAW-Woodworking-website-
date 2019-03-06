@@ -16,6 +16,28 @@
 --
 -->
 
+<?php
+
+if (isset($_POST["name"]) && isset($_POST["email"])) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -51,7 +73,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="AboutUs.html">About Us</a></li>
                 <li><a href="CustomOrder.html">Custom Order</a></li>
-                <li><a href="SpecialProjects.html">Special Projects</a></li>
+                <li><a href="SpecialProjects.html">Project Gallery</a></li>
                 <li><a href="Endorsements.html">Endorsements</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
@@ -64,49 +86,57 @@
     </header>
 </div>
 
-<div class="center">
-    <h1 class= landingDiv>Let's Build Together</h1>
-    <hr>
-    <div class="saw">
+
+<h1 class= landingDiv>Let's Build Together</h1>
+<hr>
+<div class="Build">
+    <div class="col-lg-4 col-md-4 work">
+        <img src="https://i.imgur.com/ksnEXzT.jpg" alt="Measuring Tape">
+    </div>
+    <div class="col-lg-4 col-md-4 col-xs-12 saw">
         <img src="https://i.imgur.com/tDiaczD.jpg" alt="Sawing Wood">
     </div>
+    <div class="col-lg-4 col-md-4 work">
+        <img src="https://i.imgur.com/qraiXdQ.jpg" alt="Wood Chipping">
+    </div>
+</div>
+
+<div class="center">
     <div class="introP">
-        <p>If you can dream it, we can craft it. Be sure to send us as detailed of a description as possible so that we can deliver the best results!</p>
+        <p>If you can dream it, we can build it. Be sure to send us as detailed of a description as possible so that we can deliver the best results!</p>
     </div>
 
+    <!--Put inputs into a single row for large/xl display to eliminate white space -->
     <div class="info">
-    <h2>Name</h2>
+        <h2>Name:</h2>
 
-    <input type="text">
+        <input type="text" class="name">
 
+        <h2>Email Address:</h2>
 
-    <h2>Email Address</h2>
+        <input type="email" class="email">
 
-    <input type="email">
+        </div>
 
-    </div>
-
-    <h2>Item Description</h2>
-    <textarea name="order" id="" cols="60" rows="10" placeholder="What can we help you with?"></textarea>
+        <h2>Item Description:</h2>
+        <textarea name="order" id="" cols="60" rows="10" placeholder="What can we help you create?"></textarea>
 
     <div class="button">
         <button type="submit" class="btn btn-dark">Submit</button>
     </div>
 </div>
 
-<div class="bottomPage">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda atque cum, ex facilis impedit ipsa iusto laborum, nulla quas quo recusandae rem, voluptatibus? Autem eum ipsum itaque qui repellat!</p>
-</div>
-<!-- Make "Not Responsible" more centered on footer, and add spacing between icons. Maybe add the marketplace icon as well -->
-<footer class="page-footer">
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-left py-3">2019 Copyright Live Action Woodworking | All Rights Reserved
-        <div class="Social">"Not Responsible"
-            <a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
-        </div>
+<!-- Make "Not Responsible" more centered on footer, and add spacing between icons. Maybe add the marketplace icon as well -->
+<div class="flex-container">
+    <div style="flex-grow: 6"><i class="far fa-copyright"></i> 2019 Copyright Live Action Woodworking | All Rights Reserved</div>
+    <div style="flex-grow: 2">"Not Responsible"</div>
+    <div style="flex-grow: 1">
+        <a href="http://www.facebook.com">
+            <i class="fab fa-facebook-f"></i>
+        </a>
     </div>
-</footer>
+</div>
 
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>

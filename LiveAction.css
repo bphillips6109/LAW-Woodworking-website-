@@ -5,6 +5,7 @@
 * @version: Feb 10, 2019
 *
 **/
+
 body {
 	font-family: 'Roboto', sans-serif;
 	background: rgb(28, 28, 28);
@@ -16,21 +17,28 @@ body {
 
 html {
 	height: 100%;
+	box-sizing: border-box;
+}
 
+h1{
+	font-size: 54px;
+	padding-top: 70px;
+	margin-bottom: 10px;
 }
 
 hr {
-	box-sizing: border-box;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin: 20px;
 	border: 0;
 	border-top: 1px solid rgb(202, 179, 136);
 	width: 95%;
 }
 
-p {
-	max-width: 600px;
-	margin: 0 auto 20px;
+.scrollButton > a:hover{
+	color: rgb(240, 240, 240);
+}
+
+.description{
+	margin: 40px;
 }
 
 .navbar-inverse {
@@ -40,6 +48,7 @@ p {
 	width: 100%;
 	border-bottom: 2px solid rgb(202, 179, 136);
 	background-color: black;
+	border-radius: 0;
 }
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
@@ -85,16 +94,14 @@ p {
 	text-align: center;
 }
 
-.h1, h1 {
-	font-size:2em;
-}
 
 .landingDiv {
 	font-family: 'Staatliches', sans-serif;
-	font-size: 7vw;
-	text-shadow: 0px 4px 3px black;
+	font-size: 40px;
+	text-shadow: 0 4px 3px black;
 	text-align: center;
 	letter-spacing: 6px;
+	margin-top: -10px;
 }
 
 .thumbnail {
@@ -116,7 +123,99 @@ p {
 	padding-right: 14px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1280px) {
+
+	a.scroll {
+		color: white;
+		position: relative;
+		top: 4em;
+		font-size: 50px;
+	}
+}
+
+
+/*Adjust things for landscape mode*/
+
+@media screen and (max-width: 1280px){
+
+	.landingDiv{
+		margin: -45px 4px 0 4px;
+		font-size: 60px;
+	}
+}
+
+@media screen and (max-width: 991px){
+	h1{
+		font-size: 40px;
+	}
+
+	.landingDiv {
+		margin: -45px 4px 0 4px;
+		font-size: 60px;
+	}
+}
+
+
+@media screen and (max-width: 860px){
+	h1{
+		font-size: 35px;
+	}
+
+	.landingDiv {
+		margin: -45px 4px 0 4px;
+		font-size: 50px;
+	}
+}
+
+@media screen and (max-width: 697px) {
+
 	.flex-container {
 		font-size: 10px;
+		text-align: center;
 	}
+	.description{
+		margin: 20px;
+	}
+
+	a.scroll {
+		visibility: hidden;
+	}
+
+	.landingDiv {
+		margin: -45px 4px 0 4px;
+		font-size: 50px;
+	}
+
+	h1{
+		font-size: 30px;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	hr {
+		width: 90%;
+	}
+
+	.landingDiv{
+		font-size: 40px;
+	}
+
+}
+
+@media screen and (orientation: landscape) {
+
+	h1 {
+		padding-top: 80px
+	}
+}
+
+@media screen and (orientation: portrait) {
+
+	h1 {
+		padding-top: 80px;
+		font-size: 32px;
+	}
+
+}

@@ -1,18 +1,19 @@
-body{
+body {
+	margin: 0 auto;
 	font-family: 'Roboto', sans-serif;
 	background-color: white;
 	background-size: cover;
-	background-position: center;
+	width: 100%;
 }
 
-h1{
+h1 {
 	color: black;
 	text-shadow: 0px 4px 3px white;
 	letter-spacing: 3px;
 	font-size: 30px;
 }
 
-iframe{
+iframe {
 	display: block;
 	margin: 0 auto;
 	padding-bottom: 10px;
@@ -27,46 +28,44 @@ hr {
 	opacity: 0.5;
 }
 
-br{
-	margin-top:20px;
-	margin-bottom: 20px;
+.navbar-inverse {
+    z-index: 99999;
+    position: fixed;
+    top:0;
+    width: 100%;
+    border-bottom: 2px solid rgb(202, 179, 136);
+    background-color: black;
+    border-radius: 0;
 }
 
-.container{
-	width: 100%;
-	position: absolute;
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: rgb(202, 179, 136)
 }
 
-.navbar-inverse{
-	z-index: 99999;
-	position: fixed;
-	top:0;
-	width: 100%;
-	border-color: rgb(202, 179, 136);
-	border-bottom-width: 2px;
-	background-color: black;
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: gray;
 }
 
-.navbar-inverse .navbar-nav>li>a{
-	color: white;
-	font-size: 14px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	text-shadow: 0 1px 2px rgb(10, 10, 10);
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0px 1px 2px rgb(10, 10, 10);
 }
 
 .navbar-inverse .navbar-brand {
-	font-family: 'Roboto', sans-serif;
-	color: rgb(230, 230, 230);
-	font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    font-size: 20px;
 }
 
-.container>.navbar-collapse, .container>.navbar-header {
-	margin-right: -16px;
-	margin-left: -16px;
+.navbar-inverse .navbar-brand:hover {
+    color: gray;
+
 }
 
-.topHead{
+.topHead {
 	text-align: center;
 	font-weight: bold;
 	font-family: 'Staatliches', sans-serif;
@@ -77,54 +76,106 @@ br{
 	text-shadow: 0px 3px 4px rgb(202, 179, 136);
 }
 
-.aboutIntro{
-	margin-left: 200px;
-	margin-right: 200px;
+.aboutIntro {
 	padding-top: 40px;
 	padding-bottom: 20px;
 	color: black;
 	font-size: 20px;
 }
 
+#bio {
+	color:black;
+	text-align: center;
+}
+
 .bioName{
-	font-size: 80px;
-	color: black;
 	font-family: 'Staatliches', sans-serif;
-	text-shadow: 0 3 4 rgb(202, 179, 136);
+	font-size: 80px;
+	text-shadow: 0px 3px 4px rgb(202, 179, 136);
 	letter-spacing: 3px;
 	display: block;
-	text-align: center;
-	padding-left: 300px;
+	padding-bottom: 10px;
 }
 
-.bioInfo{
+.bioInfo {
 	display: block;
-	color:black;
-	margin-right: 90px;
-	margin-bottom: 40px;
+	color: black;
 }
 
-.bioPic{
+.bioPic {
+	margin: 0 auto;
 	float: left;
-	padding-left: 200px;
 	padding-right: 20px;
+	padding-bottom: 60px;
 }
 
-.Copyright{
-	float:left;
+.flex-container {
+    display: flex;
+    flex-direction: row;
+	width: 114%;
+	position: relative;
+	right:70px;
+	height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-top: 2px solid rgb(202, 179, 136);
+    padding-left: 14px;
+    padding-right: 14px;
+	margin: 0 auto;
+
 }
 
-.Social{
-	float: right;
-	padding-right: 16px;
+@media screen and (max-width: 600px) {
+
+	iframe {
+		width: 375px;
+		height: 250px;
+		padding-right: 4px;
+	}
+
+	p {
+		margin: 4px 0px;
+	}
+
+	.aboutIntro {
+		font-size: 16px;
+	}
+
+	#bio {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.bioName {
+		font-size: 40px;
+		margin: 0 auto;
+	}
+
+	.bioPic {
+		padding-bottom: 10px;
+		margin: 0 auto;
+		height: 300px;
+		padding-left: 12px;
+	}
+
+	.bioInfo {
+		margin: 0 auto;
+		padding-top: 4px;
+	}
+
+	.flex-container {
+		font-size: 10px;
+		margin: 0 0 0 44px;
+		position: relative;
+	}
 }
 
-.page-footer{
-	border-top: 2px solid;
-	background-color: black;
-	height: 40px;
-	padding-top: 5px;
-	width: 100%;
-	border-color: rgb(202, 179, 136);
-	color: white;
+@media (min-width: 1200px) {
+	.flex-container {
+		width: 114%;
+		position: relative;
+		right:70px;
+	}
 }

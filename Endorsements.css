@@ -1,3 +1,7 @@
+@viewport{
+    zoom: 1.0;
+}
+
 body{
     background-color: white;
     font-family: 'Roboto', sans-serif;
@@ -5,50 +9,58 @@ body{
     position: center;
 }
 
-.navbar-inverse{
+.navbar-inverse {
     z-index: 99999;
     position: fixed;
     top:0;
     width: 100%;
-    border-color: rgb(202, 179, 136);
-    border-bottom-width: 2px;
+    border-bottom: 2px solid rgb(202, 179, 136);
     background-color: black;
+    border-radius: 0;
 }
 
-.navbar-inverse .navbar-nav>li>a{
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: rgb(202, 179, 136)
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: gray;
+}
+
+.navbar-inverse .navbar-nav>li>a {
     color: white;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    text-shadow: 0 1px 2px rgb(10, 10, 10);
+    text-shadow: 0px 1px 2px rgb(10, 10, 10);
 }
 
 .navbar-inverse .navbar-brand {
     font-family: 'Roboto', sans-serif;
-    color: rgb(230, 230, 230);
+    color:white;
     font-size: 20px;
 }
 
-.container>.navbar-collapse, .container>.navbar-header {
-    margin-right: -16px;
-    margin-left: -16px;
+.navbar-inverse .navbar-brand:hover {
+    color: gray;
 }
 
-.page-footer{
-    border-top: 2px solid;
-    background-color: black;
-    height: 40px;
-    padding-top: 5px;
+.flex-container {
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    border-color: rgb(202, 179, 136);
+    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
     color: white;
+    border-top: 2px solid rgb(202, 179, 136);
+    padding-left: 14px;
+    padding-right: 14px;
 }
 
-.Copyright{
-    float:left;
-}
-
-.Social{
-    float: right;
-    padding-right: 16px;
+@media screen and (max-width: 600px) {
+    .flex-container {
+        font-size: 10px;
+    }
 }
